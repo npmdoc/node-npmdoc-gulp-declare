@@ -1,0 +1,126 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/lazd/gulp-declare">gulp-declare (v0.3.0)</a>
+</h1>
+<h4>Safely declare namespaces and set their properties</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-declare">module gulp-declare</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-declare.processNameByPath">
+            function <span class="apidocSignatureSpan">gulp-declare.</span>processNameByPath
+            <span class="apidocSignatureSpan">(filePath)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-declare" id="apidoc.module.gulp-declare">module gulp-declare</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-declare.processNameByPath" id="apidoc.element.gulp-declare.processNameByPath">
+        function <span class="apidocSignatureSpan">gulp-declare.</span>processNameByPath
+        <span class="apidocSignatureSpan">(filePath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">processNameByPath = function (filePath) {
+  // Make the directory relative
+  filePath = path.relative(process.cwd(), filePath);
+
+  // Split the path into its components based on the separator
+  var parts = filePath.split(path.sep);
+
+  // Remove and process template name
+  var templateName = path.basename(parts.pop(), '.js');
+
+  // Add template name back
+  parts.push(templateName);
+
+  // Turn the path into dot notation
+  return parts.join('.');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```js
+module.exports["App"] = module.exports["App"] || {};
+module.exports["App"]["Main"] = /* File contents from App.Main.js */;
+module.exports["App"]["Header"] = /* File contents from App.Header.js */;
+module.exports["App"]["Footer"] = /* File contents from App.Footer.js */;
+```
+
+### declare.<span class="apidocCodeKeywordSpan">processNameByPath</span>(filePath)
+
+Pass this method as `options.processName` so the path within the namespace matches the path in the filesystem combined with dot
+notation from the filename:
+
+```js
+gulp.src(['templates/**/*.html'])
+.pipe(domly()) // Compile HTML to document fragment builder functions
+.pipe(declare({
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
