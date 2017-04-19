@@ -1,9 +1,14 @@
-# api documentation for  [gulp-declare (v0.3.0)](https://github.com/lazd/gulp-declare)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-declare.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-declare) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-declare.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-declare)
+# npmdoc-gulp-declare
+
+#### api documentation for  [gulp-declare (v0.3.0)](https://github.com/lazd/gulp-declare)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-declare.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-declare) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-declare.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-declare)
+
 #### Safely declare namespaces and set their properties
 
-[![NPM](https://nodei.co/npm/gulp-declare.png?downloads=true)](https://www.npmjs.com/package/gulp-declare)
+[![NPM](https://nodei.co/npm/gulp-declare.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-declare)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-declare/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-declare_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-declare/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-declare/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-declare/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-declare/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-declare/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-declare/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Larry Davis",
-        "email": "lazdnet@gmail.com"
+        "name": "Larry Davis"
     },
     "bugs": {
         "url": "https://github.com/lazd/gulp-declare/issues"
@@ -51,13 +55,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "lazd",
-            "email": "lazdnet@gmail.com"
+            "name": "lazd"
         }
     ],
     "name": "gulp-declare",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/lazd/gulp-declare.git"
@@ -67,59 +69,6 @@
     },
     "version": "0.3.0"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-declare](#apidoc.module.gulp-declare)
-1.  [function <span class="apidocSignatureSpan">gulp-declare.</span>processNameByPath (filePath)](#apidoc.element.gulp-declare.processNameByPath)
-
-
-
-# <a name="apidoc.module.gulp-declare"></a>[module gulp-declare](#apidoc.module.gulp-declare)
-
-#### <a name="apidoc.element.gulp-declare.processNameByPath"></a>[function <span class="apidocSignatureSpan">gulp-declare.</span>processNameByPath (filePath)](#apidoc.element.gulp-declare.processNameByPath)
-- description and source-code
-```javascript
-processNameByPath = function (filePath) {
-  // Make the directory relative
-  filePath = path.relative(process.cwd(), filePath);
-
-  // Split the path into its components based on the separator
-  var parts = filePath.split(path.sep);
-
-  // Remove and process template name
-  var templateName = path.basename(parts.pop(), '.js');
-
-  // Add template name back
-  parts.push(templateName);
-
-  // Turn the path into dot notation
-  return parts.join('.');
-}
-```
-- example usage
-```shell
-...
-'''js
-module.exports["App"] = module.exports["App"] || {};
-module.exports["App"]["Main"] = /* File contents from App.Main.js */;
-module.exports["App"]["Header"] = /* File contents from App.Header.js */;
-module.exports["App"]["Footer"] = /* File contents from App.Footer.js */;
-'''
-
-### declare.processNameByPath(filePath)
-
-Pass this method as 'options.processName' so the path within the namespace matches the path in the filesystem combined with dot
-notation from the filename:
-
-'''js
-gulp.src(['templates/**/*.html'])
-.pipe(domly()) // Compile HTML to document fragment builder functions
-.pipe(declare({
-...
 ```
 
 
