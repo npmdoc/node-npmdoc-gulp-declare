@@ -56,6 +56,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-declare.gulp-declare">
+            function <span class="apidocSignatureSpan"></span>gulp-declare
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.gulp-declare.processNameByPath">
             function <span class="apidocSignatureSpan">gulp-declare.</span>processNameByPath
             <span class="apidocSignatureSpan">(filePath)</span>
@@ -69,6 +78,55 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-declare" id="apidoc.module.gulp-declare">module gulp-declare</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-declare.gulp-declare" id="apidoc.element.gulp-declare.gulp-declare">
+        function <span class="apidocSignatureSpan"></span>gulp-declare
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-declare = function (options) {
+  options = extend({
+    processName: defaultProcessName,
+    namespace: 'this',
+    separator: '\n',
+    root: 'this',
+    noRedeclare: false
+  }, options);
+
+  // Support removal of duplicate declarations
+  var alreadyDeclared = null;
+  if (options.noRedeclare) {
+    alreadyDeclared = {};
+  }
+
+  var declareNamespace = function(contents, filename) {
+    contents = contents.toString();
+
+    // Get the name of the template
+    var name = options.processName(filename);
+
+    // Prepend namespace to name
+    if (options.namespace !== 'this') {
+      name = options.namespace+'.'+name;
+    }
+
+    // Get namespace information for the final template name
+    return declare(name, {
+      declared: alreadyDeclared,
+      value: contents,
+      separator: options.separator,
+      root: options.root
+    });
+  };
+
+  return map(declareNamespace);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
