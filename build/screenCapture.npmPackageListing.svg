@@ -1,11 +1,11 @@
 <svg height="878" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="878" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-19 04:34:39 +0000    39943 bytes  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-19 04:34:39 +0000     1078 bytes  LICENSE</tspan>
-<tspan x="10" y="58">  2.  2017-04-19 04:34:39 +0000     7028 bytes  README.md</tspan>
-<tspan x="10" y="74">  3.  2017-04-19 04:34:39 +0000     1695 bytes  index.js</tspan>
-<tspan x="10" y="90">  4.  2017-04-19 04:34:39 +0000     2186 bytes  package.json</tspan>
+<tspan x="10" y="26">  0.  2017-04-26 03:22:12 +0000    39943 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-26 03:22:12 +0000     1078 bytes  LICENSE</tspan>
+<tspan x="10" y="58">  2.  2017-04-26 03:22:12 +0000     7028 bytes  README.md</tspan>
+<tspan x="10" y="74">  3.  2017-04-26 03:22:12 +0000     1695 bytes  index.js</tspan>
+<tspan x="10" y="90">  4.  2017-04-26 03:22:12 +0000     2186 bytes  package.json</tspan>
 <tspan x="10" y="106">ls: cannot access test/expected/Assign: No such file or directory</tspan>
 <tspan x="10" y="122">ls: cannot access as: No such file or directory</tspan>
 <tspan x="10" y="138">ls: cannot access a: No such file or directory</tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="170">ls: cannot access of: No such file or directory</tspan>
 <tspan x="10" y="186">ls: cannot access a: No such file or directory</tspan>
 <tspan x="10" y="202">ls: cannot access namespace.js: No such file or directory</tspan>
-<tspan x="10" y="218">  5.  2017-04-19 04:34:39 +0000     2186 bytes  test/expected/Assign as a property of a namespac\</tspan>
+<tspan x="10" y="218">  5.  2017-04-26 03:22:12 +0000     2186 bytes  test/expected/Assign as a property of a namespac\</tspan>
 <tspan x="10" y="234">e.js</tspan>
 <tspan x="10" y="250">ls: cannot access test/expected/Assign: No such file or directory</tspan>
 <tspan x="10" y="266">ls: cannot access as: No such file or directory</tspan>
@@ -22,37 +22,37 @@
 <tspan x="10" y="314">ls: cannot access of: No such file or directory</tspan>
 <tspan x="10" y="330">ls: cannot access a: No such file or directory</tspan>
 <tspan x="10" y="346">ls: cannot access subnamespace.js: No such file or directory</tspan>
-<tspan x="10" y="362">  6.  2017-04-19 04:34:39 +0000     2186 bytes  test/expected/Assign as a property of a subnames\</tspan>
+<tspan x="10" y="362">  6.  2017-04-26 03:22:12 +0000     2186 bytes  test/expected/Assign as a property of a subnames\</tspan>
 <tspan x="10" y="378">pace.js</tspan>
 <tspan x="10" y="394">ls: cannot access test/expected/Base: No such file or directory</tspan>
 <tspan x="10" y="410">ls: cannot access namespace.js: No such file or directory</tspan>
-<tspan x="10" y="426">  7.  2017-04-19 04:34:39 +0000     2186 bytes  test/expected/Base namespace.js</tspan>
+<tspan x="10" y="426">  7.  2017-04-26 03:22:12 +0000     2186 bytes  test/expected/Base namespace.js</tspan>
 <tspan x="10" y="442">ls: cannot access test/expected/Custom: No such file or directory</tspan>
 <tspan x="10" y="458">ls: cannot access processName: No such file or directory</tspan>
 <tspan x="10" y="474">ls: cannot access function.js: No such file or directory</tspan>
-<tspan x="10" y="490">  8.  2017-04-19 04:34:39 +0000     2186 bytes  test/expected/Custom processName function.js</tspan>
+<tspan x="10" y="490">  8.  2017-04-26 03:22:12 +0000     2186 bytes  test/expected/Custom processName function.js</tspan>
 <tspan x="10" y="506">ls: cannot access test/expected/Custom: No such file or directory</tspan>
 <tspan x="10" y="522">ls: cannot access processName: No such file or directory</tspan>
 <tspan x="10" y="538">ls: cannot access with: No such file or directory</tspan>
 <tspan x="10" y="554">ls: cannot access a: No such file or directory</tspan>
 <tspan x="10" y="570">ls: cannot access namespace.js: No such file or directory</tspan>
-<tspan x="10" y="586">  9.  2017-04-19 04:34:39 +0000     2186 bytes  test/expected/Custom processName with a namespac\</tspan>
+<tspan x="10" y="586">  9.  2017-04-26 03:22:12 +0000     2186 bytes  test/expected/Custom processName with a namespac\</tspan>
 <tspan x="10" y="602">e.js</tspan>
 <tspan x="10" y="618">ls: cannot access test/expected/Custom: No such file or directory</tspan>
 <tspan x="10" y="634">ls: cannot access root.js: No such file or directory</tspan>
-<tspan x="10" y="650"> 10.  2017-04-19 04:34:39 +0000     2186 bytes  test/expected/Custom root.js</tspan>
+<tspan x="10" y="650"> 10.  2017-04-26 03:22:12 +0000     2186 bytes  test/expected/Custom root.js</tspan>
 <tspan x="10" y="666">ls: cannot access test/expected/Custom: No such file or directory</tspan>
 <tspan x="10" y="682">ls: cannot access separator.js: No such file or directory</tspan>
-<tspan x="10" y="698"> 11.  2017-04-19 04:34:39 +0000     2186 bytes  test/expected/Custom separator.js</tspan>
+<tspan x="10" y="698"> 11.  2017-04-26 03:22:12 +0000     2186 bytes  test/expected/Custom separator.js</tspan>
 <tspan x="10" y="714">ls: cannot access test/expected/Declaration: No such file or directory</tspan>
 <tspan x="10" y="730">ls: cannot access based: No such file or directory</tspan>
 <tspan x="10" y="746">ls: cannot access on: No such file or directory</tspan>
 <tspan x="10" y="762">ls: cannot access filename.js: No such file or directory</tspan>
-<tspan x="10" y="778"> 12.  2017-04-19 04:34:39 +0000     2186 bytes  test/expected/Declaration based on filename.js</tspan>
+<tspan x="10" y="778"> 12.  2017-04-26 03:22:12 +0000     2186 bytes  test/expected/Declaration based on filename.js</tspan>
 <tspan x="10" y="794">ls: cannot access test/expected/Efficient: No such file or directory</tspan>
 <tspan x="10" y="810">ls: cannot access declaration.js: No such file or directory</tspan>
-<tspan x="10" y="826"> 13.  2017-04-19 04:34:39 +0000     2186 bytes  test/expected/Efficient declaration.js</tspan>
-<tspan x="10" y="842"> 14.  2017-04-19 04:34:39 +0000      157 bytes  test/expected/processNameByPath.js</tspan>
-<tspan x="10" y="858"> 15.  2017-04-19 04:34:39 +0000     8125 bytes  test/main.js</tspan>
+<tspan x="10" y="826"> 13.  2017-04-26 03:22:12 +0000     2186 bytes  test/expected/Efficient declaration.js</tspan>
+<tspan x="10" y="842"> 14.  2017-04-26 03:22:12 +0000      157 bytes  test/expected/processNameByPath.js</tspan>
+<tspan x="10" y="858"> 15.  2017-04-26 03:22:12 +0000     8125 bytes  test/main.js</tspan>
 </text>
 </svg>
