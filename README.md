@@ -1,6 +1,6 @@
 # npmdoc-gulp-declare
 
-#### api documentation for  [gulp-declare (v0.3.0)](https://github.com/lazd/gulp-declare)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-declare.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-declare) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-declare.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-declare)
+#### basic api documentation for  [gulp-declare (v0.3.0)](https://github.com/lazd/gulp-declare)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-declare.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-declare) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-declare.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-declare)
 
 #### Safely declare namespaces and set their properties
 
@@ -67,7 +67,8 @@
     "scripts": {
         "test": "mocha"
     },
-    "version": "0.3.0"
+    "version": "0.3.0",
+    "bin": {}
 }
 ```
 
